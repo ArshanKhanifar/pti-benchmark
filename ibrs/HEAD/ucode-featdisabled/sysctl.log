@@ -1,0 +1,10 @@
+Script started on Wed Jan 31 19:58:50 2018
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featdisabled # sysctl hw.ibrs_disabled
+sysctl: unknown oid 'hw.ibrs_disabled'
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featdisabled # sysctl hw.ibrs_disabled[K
+hw.ibrs_disable: 1
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featdisabled # sysctl hw.ibrs_disable[K[K[K[K[K[K[Kca[K[Kaci[Ktive
+hw.ibrs_active: 0
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featdisabled # ^Dexit
+
+Script done on Wed Jan 31 19:59:44 2018

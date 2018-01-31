@@ -1,12 +1,25 @@
+Script started on Wed Jan 31 20:02:57 2018
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featdisabled # find /usr/obj/ | grep syscall_timin
+/usr/obj/usr/src/amd64.amd64/tools/tools/syscall_timing
+/usr/obj/usr/src/amd64.amd64/tools/tools/syscall_timing/.depend
+/usr/obj/usr/src/amd64.amd64/tools/tools/syscall_timing/syscall_timing.full
+/usr/obj/usr/src/amd64.amd64/tools/tools/syscall_timing/.depend.syscall_timing.o
+/usr/obj/usr/src/amd64.amd64/tools/tools/syscall_timing/syscall_timing.o
+/usr/obj/usr/src/amd64.amd64/tools/tools/syscall_timing/syscall_timing.debug
+/usr/obj/usr/src/amd64.amd64/tools/tools/syscall_timing/syscall_timing
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featdisabled # /usr/obj/usr/src/amd64.amd64/tools/tools/syscall_timing/syscall_timing getppdi[K[Kid
 Clock resolution: 0.000000001
 test	loop	time	iterations	periteration
-getppid	0	1.032902804	1468784	0.000000703
-getppid	1	1.000407826	1426827	0.000000701
-getppid	2	1.031038927	1467700	0.000000702
-getppid	3	1.019994758	1451611	0.000000702
-getppid	4	1.061941464	1511187	0.000000702
-getppid	5	1.032045976	1469335	0.000000702
-getppid	6	1.032004347	1468081	0.000000702
-getppid	7	1.061986734	1512022	0.000000702
-getppid	8	1.026993123	1461204	0.000000702
-getppid	9	1.000994376	1424320	0.000000702
+getppid	0	1.061973972	1514845	0.000000701
+getppid	1	1.061994821	1515481	0.000000700
+getppid	2	1.062029075	1517938	0.000000699
+getppid	3	1.060097689	1511387	0.000000701
+getppid	4	1.055880843	1504905	0.000000701
+getppid	5	1.059910822	1515130	0.000000699
+getppid	6	1.039408527	1479926	0.000000702
+getppid	7	1.034358214	1475908	0.000000700
+getppid	8	1.062177534	1515115	0.000000701
+getppid	9	1.061985292	1514728	0.000000701
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featdisabled # ^Dexit
+
+Script done on Wed Jan 31 20:03:53 2018

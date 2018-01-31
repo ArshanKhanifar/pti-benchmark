@@ -1,0 +1,6 @@
+Script started on Wed Jan 31 20:00:07 2018
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featdisabled # uname -a
+FreeBSD test 12.0-CURRENT FreeBSD 12.0-CURRENT #1 22ad2342b11(master): Wed Jan 31 18:02:31 UTC 2018     root@test:/usr/obj/usr/src/amd64.amd64/sys/GENERIC-NODEBUG  amd64
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featdisabled # ^Dexit
+
+Script done on Wed Jan 31 20:00:18 2018

@@ -1,3 +1,7 @@
+Script started on Wed Jan 31 20:00:42 2018
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featdisabled # 8[Ku86info -a
+u86info: Command not found.
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featdisabled # x86info -a
 x86info v1.31pre
 MP Configuration Table Header MISSING!
 Found 48 identical CPUsMP Configuration Table Header MISSING!
@@ -14,7 +18,7 @@ Performance msrs:
 Thermal msrs:
   MSR_PM_THERM2_CTL: 0x0 [Thermal monitor: 1]
   MSR_IA32_THERM_CONTROL: 0x0 [Software-controlled clock disabled (full speed)]
-  MSR_IA32_THERM_STATUS: 0x8845000c
+  MSR_IA32_THERM_STATUS: 0x8844000c
 
 Machine check MSRs:
 Number of reporting banks : 22
@@ -293,8 +297,8 @@ APIC Interrupt Request (IRR06)	 	: 0x00000000
 APIC Interrupt Request (IRR07)	 	: 0x00000000
 APIC Error Status 			: 0x00000040
 APIC LVT CMCI 				: 0x000100f2
-APIC Interrupt Command (ICR0)		: 0x000000f3
-APIC Interrupt Command (ICR1) 		: 0x3b000000
+APIC Interrupt Command (ICR0)		: 0x000000f8
+APIC Interrupt Command (ICR1) 		: 0x06000000
 APIC LVT Timer 				: 0x000400ef
 APIC Thermal Sensor 			: 0x00010000
 APIC LVT Performance Monitoring Counters: 0x00010400
@@ -310,3 +314,6 @@ Address sizes : 46 bits physical, 48 bits virtual
 
 Total processor threads: 48
 This system has 2 12-core processors with hyper-threading (2 threads per core) running at an estimated 2.20GHz
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featdisabled # ^Dexit
+
+Script done on Wed Jan 31 20:01:06 2018
