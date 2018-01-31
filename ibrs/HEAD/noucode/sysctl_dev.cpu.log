@@ -1,6 +1,8 @@
+Script started on Wed Jan 31 20:26:01 2018
+root@test:~/pti-benchmark/ibrs/HEAD/noucode # sysctl dev.cpu
 dev.cpu.47.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.47.cx_usage_counters: 76 2204
-dev.cpu.47.cx_usage: 3.33% 96.66% last 5844us
+dev.cpu.47.cx_usage_counters: 74 4013
+dev.cpu.47.cx_usage: 1.81% 98.18% last 42022us
 dev.cpu.47.cx_lowest: C2
 dev.cpu.47.cx_supported: C1/1/1 C2/2/41
 dev.cpu.47.%parent: acpi0
@@ -9,8 +11,8 @@ dev.cpu.47.%location: handle=\_SB_.SCK1.CP17
 dev.cpu.47.%driver: cpu
 dev.cpu.47.%desc: ACPI CPU
 dev.cpu.46.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.46.cx_usage_counters: 92 2647
-dev.cpu.46.cx_usage: 3.35% 96.64% last 46938us
+dev.cpu.46.cx_usage_counters: 105 4305
+dev.cpu.46.cx_usage: 2.38% 97.61% last 32394us
 dev.cpu.46.cx_lowest: C2
 dev.cpu.46.cx_supported: C1/1/1 C2/2/41
 dev.cpu.46.%parent: acpi0
@@ -19,8 +21,8 @@ dev.cpu.46.%location: handle=\_SB_.SCK1.CP16
 dev.cpu.46.%driver: cpu
 dev.cpu.46.%desc: ACPI CPU
 dev.cpu.45.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.45.cx_usage_counters: 78 2254
-dev.cpu.45.cx_usage: 3.34% 96.65% last 41905us
+dev.cpu.45.cx_usage_counters: 80 4785
+dev.cpu.45.cx_usage: 1.64% 98.35% last 56435us
 dev.cpu.45.cx_lowest: C2
 dev.cpu.45.cx_supported: C1/1/1 C2/2/41
 dev.cpu.45.%parent: acpi0
@@ -29,8 +31,8 @@ dev.cpu.45.%location: handle=\_SB_.SCK1.CP15
 dev.cpu.45.%driver: cpu
 dev.cpu.45.%desc: ACPI CPU
 dev.cpu.44.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.44.cx_usage_counters: 78 1762
-dev.cpu.44.cx_usage: 4.23% 95.76% last 41845us
+dev.cpu.44.cx_usage_counters: 79 3459
+dev.cpu.44.cx_usage: 2.23% 97.76% last 19764us
 dev.cpu.44.cx_lowest: C2
 dev.cpu.44.cx_supported: C1/1/1 C2/2/41
 dev.cpu.44.%parent: acpi0
@@ -39,8 +41,8 @@ dev.cpu.44.%location: handle=\_SB_.SCK1.CP14
 dev.cpu.44.%driver: cpu
 dev.cpu.44.%desc: ACPI CPU
 dev.cpu.43.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.43.cx_usage_counters: 78 2311
-dev.cpu.43.cx_usage: 3.26% 96.73% last 43586us
+dev.cpu.43.cx_usage_counters: 79 4584
+dev.cpu.43.cx_usage: 1.69% 98.30% last 26285us
 dev.cpu.43.cx_lowest: C2
 dev.cpu.43.cx_supported: C1/1/1 C2/2/41
 dev.cpu.43.%parent: acpi0
@@ -49,8 +51,8 @@ dev.cpu.43.%location: handle=\_SB_.SCK1.CP13
 dev.cpu.43.%driver: cpu
 dev.cpu.43.%desc: ACPI CPU
 dev.cpu.42.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.42.cx_usage_counters: 108 2025
-dev.cpu.42.cx_usage: 5.06% 94.93% last 43578us
+dev.cpu.42.cx_usage_counters: 80 4700
+dev.cpu.42.cx_usage: 1.67% 98.32% last 52115us
 dev.cpu.42.cx_lowest: C2
 dev.cpu.42.cx_supported: C1/1/1 C2/2/41
 dev.cpu.42.%parent: acpi0
@@ -59,8 +61,8 @@ dev.cpu.42.%location: handle=\_SB_.SCK1.CP12
 dev.cpu.42.%driver: cpu
 dev.cpu.42.%desc: ACPI CPU
 dev.cpu.41.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.41.cx_usage_counters: 80 1746
-dev.cpu.41.cx_usage: 4.38% 95.61% last 38785us
+dev.cpu.41.cx_usage_counters: 81 3570
+dev.cpu.41.cx_usage: 2.21% 97.78% last 41825us
 dev.cpu.41.cx_lowest: C2
 dev.cpu.41.cx_supported: C1/1/1 C2/2/41
 dev.cpu.41.%parent: acpi0
@@ -69,8 +71,8 @@ dev.cpu.41.%location: handle=\_SB_.SCK1.CP11
 dev.cpu.41.%driver: cpu
 dev.cpu.41.%desc: ACPI CPU
 dev.cpu.40.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.40.cx_usage_counters: 78 1740
-dev.cpu.40.cx_usage: 4.29% 95.70% last 47259us
+dev.cpu.40.cx_usage_counters: 80 3546
+dev.cpu.40.cx_usage: 2.20% 97.79% last 41918us
 dev.cpu.40.cx_lowest: C2
 dev.cpu.40.cx_supported: C1/1/1 C2/2/41
 dev.cpu.40.%parent: acpi0
@@ -79,8 +81,8 @@ dev.cpu.40.%location: handle=\_SB_.SCK1.CP10
 dev.cpu.40.%driver: cpu
 dev.cpu.40.%desc: ACPI CPU
 dev.cpu.39.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.39.cx_usage_counters: 80 2724
-dev.cpu.39.cx_usage: 2.85% 97.14% last 39685us
+dev.cpu.39.cx_usage_counters: 79 4454
+dev.cpu.39.cx_usage: 1.74% 98.25% last 41912us
 dev.cpu.39.cx_lowest: C2
 dev.cpu.39.cx_supported: C1/1/1 C2/2/41
 dev.cpu.39.%parent: acpi0
@@ -89,8 +91,8 @@ dev.cpu.39.%location: handle=\_SB_.SCK1.CP0F
 dev.cpu.39.%driver: cpu
 dev.cpu.39.%desc: ACPI CPU
 dev.cpu.38.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.38.cx_usage_counters: 77 1865
-dev.cpu.38.cx_usage: 3.96% 96.03% last 43565us
+dev.cpu.38.cx_usage_counters: 78 4194
+dev.cpu.38.cx_usage: 1.82% 98.17% last 42008us
 dev.cpu.38.cx_lowest: C2
 dev.cpu.38.cx_supported: C1/1/1 C2/2/41
 dev.cpu.38.%parent: acpi0
@@ -99,8 +101,8 @@ dev.cpu.38.%location: handle=\_SB_.SCK1.CP0E
 dev.cpu.38.%driver: cpu
 dev.cpu.38.%desc: ACPI CPU
 dev.cpu.37.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.37.cx_usage_counters: 78 1699
-dev.cpu.37.cx_usage: 4.38% 95.61% last 35027us
+dev.cpu.37.cx_usage_counters: 78 3537
+dev.cpu.37.cx_usage: 2.15% 97.84% last 43912us
 dev.cpu.37.cx_lowest: C2
 dev.cpu.37.cx_supported: C1/1/1 C2/2/41
 dev.cpu.37.%parent: acpi0
@@ -109,8 +111,8 @@ dev.cpu.37.%location: handle=\_SB_.SCK1.CP0D
 dev.cpu.37.%driver: cpu
 dev.cpu.37.%desc: ACPI CPU
 dev.cpu.36.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.36.cx_usage_counters: 78 1962
-dev.cpu.36.cx_usage: 3.82% 96.17% last 49199us
+dev.cpu.36.cx_usage_counters: 86 3836
+dev.cpu.36.cx_usage: 2.19% 97.80% last 42152us
 dev.cpu.36.cx_lowest: C2
 dev.cpu.36.cx_supported: C1/1/1 C2/2/41
 dev.cpu.36.%parent: acpi0
@@ -119,8 +121,8 @@ dev.cpu.36.%location: handle=\_SB_.SCK1.CP0C
 dev.cpu.36.%driver: cpu
 dev.cpu.36.%desc: ACPI CPU
 dev.cpu.35.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.35.cx_usage_counters: 78 1499
-dev.cpu.35.cx_usage: 4.94% 95.05% last 43178us
+dev.cpu.35.cx_usage_counters: 93 3524
+dev.cpu.35.cx_usage: 2.57% 97.42% last 32568us
 dev.cpu.35.cx_lowest: C2
 dev.cpu.35.cx_supported: C1/1/1 C2/2/41
 dev.cpu.35.%parent: acpi0
@@ -129,8 +131,8 @@ dev.cpu.35.%location: handle=\_SB_.SCK1.CP0B
 dev.cpu.35.%driver: cpu
 dev.cpu.35.%desc: ACPI CPU
 dev.cpu.34.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.34.cx_usage_counters: 79 1797
-dev.cpu.34.cx_usage: 4.21% 95.78% last 42084us
+dev.cpu.34.cx_usage_counters: 78 3706
+dev.cpu.34.cx_usage: 2.06% 97.93% last 55424us
 dev.cpu.34.cx_lowest: C2
 dev.cpu.34.cx_supported: C1/1/1 C2/2/41
 dev.cpu.34.%parent: acpi0
@@ -139,8 +141,8 @@ dev.cpu.34.%location: handle=\_SB_.SCK1.CP0A
 dev.cpu.34.%driver: cpu
 dev.cpu.34.%desc: ACPI CPU
 dev.cpu.33.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.33.cx_usage_counters: 77 2249
-dev.cpu.33.cx_usage: 3.31% 96.68% last 43605us
+dev.cpu.33.cx_usage_counters: 80 3547
+dev.cpu.33.cx_usage: 2.20% 97.79% last 86us
 dev.cpu.33.cx_lowest: C2
 dev.cpu.33.cx_supported: C1/1/1 C2/2/41
 dev.cpu.33.%parent: acpi0
@@ -149,8 +151,8 @@ dev.cpu.33.%location: handle=\_SB_.SCK1.CP09
 dev.cpu.33.%driver: cpu
 dev.cpu.33.%desc: ACPI CPU
 dev.cpu.32.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.32.cx_usage_counters: 79 2094
-dev.cpu.32.cx_usage: 3.63% 96.36% last 23742us
+dev.cpu.32.cx_usage_counters: 82 3865
+dev.cpu.32.cx_usage: 2.07% 97.92% last 41747us
 dev.cpu.32.cx_lowest: C2
 dev.cpu.32.cx_supported: C1/1/1 C2/2/41
 dev.cpu.32.%parent: acpi0
@@ -159,8 +161,8 @@ dev.cpu.32.%location: handle=\_SB_.SCK1.CP08
 dev.cpu.32.%driver: cpu
 dev.cpu.32.%desc: ACPI CPU
 dev.cpu.31.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.31.cx_usage_counters: 77 1929
-dev.cpu.31.cx_usage: 3.83% 96.16% last 56810us
+dev.cpu.31.cx_usage_counters: 83 3156
+dev.cpu.31.cx_usage: 2.56% 97.43% last 21970us
 dev.cpu.31.cx_lowest: C2
 dev.cpu.31.cx_supported: C1/1/1 C2/2/41
 dev.cpu.31.%parent: acpi0
@@ -169,8 +171,8 @@ dev.cpu.31.%location: handle=\_SB_.SCK1.CP07
 dev.cpu.31.%driver: cpu
 dev.cpu.31.%desc: ACPI CPU
 dev.cpu.30.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.30.cx_usage_counters: 75 2070
-dev.cpu.30.cx_usage: 3.49% 96.50% last 42030us
+dev.cpu.30.cx_usage_counters: 82 3566
+dev.cpu.30.cx_usage: 2.24% 97.75% last 9565us
 dev.cpu.30.cx_lowest: C2
 dev.cpu.30.cx_supported: C1/1/1 C2/2/41
 dev.cpu.30.%parent: acpi0
@@ -179,8 +181,8 @@ dev.cpu.30.%location: handle=\_SB_.SCK1.CP06
 dev.cpu.30.%driver: cpu
 dev.cpu.30.%desc: ACPI CPU
 dev.cpu.29.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.29.cx_usage_counters: 69 1700
-dev.cpu.29.cx_usage: 3.90% 96.09% last 41958us
+dev.cpu.29.cx_usage_counters: 81 2982
+dev.cpu.29.cx_usage: 2.64% 97.35% last 42119us
 dev.cpu.29.cx_lowest: C2
 dev.cpu.29.cx_supported: C1/1/1 C2/2/41
 dev.cpu.29.%parent: acpi0
@@ -189,8 +191,8 @@ dev.cpu.29.%location: handle=\_SB_.SCK1.CP05
 dev.cpu.29.%driver: cpu
 dev.cpu.29.%desc: ACPI CPU
 dev.cpu.28.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.28.cx_usage_counters: 78 1604
-dev.cpu.28.cx_usage: 4.63% 95.36% last 18983us
+dev.cpu.28.cx_usage_counters: 80 3380
+dev.cpu.28.cx_usage: 2.31% 97.68% last 42122us
 dev.cpu.28.cx_lowest: C2
 dev.cpu.28.cx_supported: C1/1/1 C2/2/41
 dev.cpu.28.%parent: acpi0
@@ -199,8 +201,8 @@ dev.cpu.28.%location: handle=\_SB_.SCK1.CP04
 dev.cpu.28.%driver: cpu
 dev.cpu.28.%desc: ACPI CPU
 dev.cpu.27.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.27.cx_usage_counters: 76 2362
-dev.cpu.27.cx_usage: 3.11% 96.88% last 31599us
+dev.cpu.27.cx_usage_counters: 79 3421
+dev.cpu.27.cx_usage: 2.25% 97.74% last 32773us
 dev.cpu.27.cx_lowest: C2
 dev.cpu.27.cx_supported: C1/1/1 C2/2/41
 dev.cpu.27.%parent: acpi0
@@ -209,8 +211,8 @@ dev.cpu.27.%location: handle=\_SB_.SCK1.CP03
 dev.cpu.27.%driver: cpu
 dev.cpu.27.%desc: ACPI CPU
 dev.cpu.26.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.26.cx_usage_counters: 74 1625
-dev.cpu.26.cx_usage: 4.35% 95.64% last 21412us
+dev.cpu.26.cx_usage_counters: 79 3549
+dev.cpu.26.cx_usage: 2.17% 97.82% last 4278us
 dev.cpu.26.cx_lowest: C2
 dev.cpu.26.cx_supported: C1/1/1 C2/2/41
 dev.cpu.26.%parent: acpi0
@@ -219,8 +221,8 @@ dev.cpu.26.%location: handle=\_SB_.SCK1.CP02
 dev.cpu.26.%driver: cpu
 dev.cpu.26.%desc: ACPI CPU
 dev.cpu.25.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.25.cx_usage_counters: 75 1575
-dev.cpu.25.cx_usage: 4.54% 95.45% last 43540us
+dev.cpu.25.cx_usage_counters: 76 3185
+dev.cpu.25.cx_usage: 2.33% 97.66% last 39568us
 dev.cpu.25.cx_lowest: C2
 dev.cpu.25.cx_supported: C1/1/1 C2/2/41
 dev.cpu.25.%parent: acpi0
@@ -229,8 +231,8 @@ dev.cpu.25.%location: handle=\_SB_.SCK1.CP01
 dev.cpu.25.%driver: cpu
 dev.cpu.25.%desc: ACPI CPU
 dev.cpu.24.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.24.cx_usage_counters: 77 2461
-dev.cpu.24.cx_usage: 3.03% 96.96% last 18349us
+dev.cpu.24.cx_usage_counters: 77 5267
+dev.cpu.24.cx_usage: 1.44% 98.55% last 19112us
 dev.cpu.24.cx_lowest: C2
 dev.cpu.24.cx_supported: C1/1/1 C2/2/41
 dev.cpu.24.%parent: acpi0
@@ -239,8 +241,8 @@ dev.cpu.24.%location: handle=\_SB_.SCK1.CP00
 dev.cpu.24.%driver: cpu
 dev.cpu.24.%desc: ACPI CPU
 dev.cpu.23.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.23.cx_usage_counters: 76 1553
-dev.cpu.23.cx_usage: 4.66% 95.33% last 46534us
+dev.cpu.23.cx_usage_counters: 81 2905
+dev.cpu.23.cx_usage: 2.71% 97.28% last 41309us
 dev.cpu.23.cx_lowest: C2
 dev.cpu.23.cx_supported: C1/1/1 C2/2/41
 dev.cpu.23.%parent: acpi0
@@ -249,8 +251,8 @@ dev.cpu.23.%location: handle=\_SB_.SCK0.CP17
 dev.cpu.23.%driver: cpu
 dev.cpu.23.%desc: ACPI CPU
 dev.cpu.22.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.22.cx_usage_counters: 96 2219
-dev.cpu.22.cx_usage: 4.14% 95.85% last 25971us
+dev.cpu.22.cx_usage_counters: 78 4096
+dev.cpu.22.cx_usage: 1.86% 98.13% last 7879us
 dev.cpu.22.cx_lowest: C2
 dev.cpu.22.cx_supported: C1/1/1 C2/2/41
 dev.cpu.22.%parent: acpi0
@@ -259,8 +261,8 @@ dev.cpu.22.%location: handle=\_SB_.SCK0.CP16
 dev.cpu.22.%driver: cpu
 dev.cpu.22.%desc: ACPI CPU
 dev.cpu.21.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.21.cx_usage_counters: 83 1748
-dev.cpu.21.cx_usage: 4.53% 95.46% last 19119us
+dev.cpu.21.cx_usage_counters: 74 3210
+dev.cpu.21.cx_usage: 2.25% 97.74% last 43606us
 dev.cpu.21.cx_lowest: C2
 dev.cpu.21.cx_supported: C1/1/1 C2/2/41
 dev.cpu.21.%parent: acpi0
@@ -269,8 +271,8 @@ dev.cpu.21.%location: handle=\_SB_.SCK0.CP15
 dev.cpu.21.%driver: cpu
 dev.cpu.21.%desc: ACPI CPU
 dev.cpu.20.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.20.cx_usage_counters: 83 1542
-dev.cpu.20.cx_usage: 5.10% 94.89% last 41068us
+dev.cpu.20.cx_usage_counters: 99 3118
+dev.cpu.20.cx_usage: 3.07% 96.92% last 42058us
 dev.cpu.20.cx_lowest: C2
 dev.cpu.20.cx_supported: C1/1/1 C2/2/41
 dev.cpu.20.%parent: acpi0
@@ -279,8 +281,8 @@ dev.cpu.20.%location: handle=\_SB_.SCK0.CP14
 dev.cpu.20.%driver: cpu
 dev.cpu.20.%desc: ACPI CPU
 dev.cpu.19.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.19.cx_usage_counters: 77 1461
-dev.cpu.19.cx_usage: 5.00% 94.99% last 23827us
+dev.cpu.19.cx_usage_counters: 73 3073
+dev.cpu.19.cx_usage: 2.32% 97.67% last 41980us
 dev.cpu.19.cx_lowest: C2
 dev.cpu.19.cx_supported: C1/1/1 C2/2/41
 dev.cpu.19.%parent: acpi0
@@ -289,8 +291,8 @@ dev.cpu.19.%location: handle=\_SB_.SCK0.CP13
 dev.cpu.19.%driver: cpu
 dev.cpu.19.%desc: ACPI CPU
 dev.cpu.18.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.18.cx_usage_counters: 77 1577
-dev.cpu.18.cx_usage: 4.65% 95.34% last 48794us
+dev.cpu.18.cx_usage_counters: 80 3078
+dev.cpu.18.cx_usage: 2.53% 97.46% last 18189us
 dev.cpu.18.cx_lowest: C2
 dev.cpu.18.cx_supported: C1/1/1 C2/2/41
 dev.cpu.18.%parent: acpi0
@@ -299,8 +301,8 @@ dev.cpu.18.%location: handle=\_SB_.SCK0.CP12
 dev.cpu.18.%driver: cpu
 dev.cpu.18.%desc: ACPI CPU
 dev.cpu.17.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.17.cx_usage_counters: 75 1588
-dev.cpu.17.cx_usage: 4.50% 95.49% last 41955us
+dev.cpu.17.cx_usage_counters: 83 3028
+dev.cpu.17.cx_usage: 2.66% 97.33% last 12022us
 dev.cpu.17.cx_lowest: C2
 dev.cpu.17.cx_supported: C1/1/1 C2/2/41
 dev.cpu.17.%parent: acpi0
@@ -309,8 +311,8 @@ dev.cpu.17.%location: handle=\_SB_.SCK0.CP11
 dev.cpu.17.%driver: cpu
 dev.cpu.17.%desc: ACPI CPU
 dev.cpu.16.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.16.cx_usage_counters: 75 1578
-dev.cpu.16.cx_usage: 4.53% 95.46% last 41852us
+dev.cpu.16.cx_usage_counters: 111 3161
+dev.cpu.16.cx_usage: 3.39% 96.60% last 56145us
 dev.cpu.16.cx_lowest: C2
 dev.cpu.16.cx_supported: C1/1/1 C2/2/41
 dev.cpu.16.%parent: acpi0
@@ -319,8 +321,8 @@ dev.cpu.16.%location: handle=\_SB_.SCK0.CP10
 dev.cpu.16.%driver: cpu
 dev.cpu.16.%desc: ACPI CPU
 dev.cpu.15.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.15.cx_usage_counters: 75 1631
-dev.cpu.15.cx_usage: 4.39% 95.60% last 48461us
+dev.cpu.15.cx_usage_counters: 93 2952
+dev.cpu.15.cx_usage: 3.05% 96.94% last 74us
 dev.cpu.15.cx_lowest: C2
 dev.cpu.15.cx_supported: C1/1/1 C2/2/41
 dev.cpu.15.%parent: acpi0
@@ -329,8 +331,8 @@ dev.cpu.15.%location: handle=\_SB_.SCK0.CP0F
 dev.cpu.15.%driver: cpu
 dev.cpu.15.%desc: ACPI CPU
 dev.cpu.14.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.14.cx_usage_counters: 89 1702
-dev.cpu.14.cx_usage: 4.96% 95.03% last 43249us
+dev.cpu.14.cx_usage_counters: 79 3162
+dev.cpu.14.cx_usage: 2.43% 97.56% last 192us
 dev.cpu.14.cx_lowest: C2
 dev.cpu.14.cx_supported: C1/1/1 C2/2/41
 dev.cpu.14.%parent: acpi0
@@ -339,8 +341,8 @@ dev.cpu.14.%location: handle=\_SB_.SCK0.CP0E
 dev.cpu.14.%driver: cpu
 dev.cpu.14.%desc: ACPI CPU
 dev.cpu.13.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.13.cx_usage_counters: 76 1718
-dev.cpu.13.cx_usage: 4.23% 95.76% last 41881us
+dev.cpu.13.cx_usage_counters: 77 3102
+dev.cpu.13.cx_usage: 2.42% 97.57% last 508us
 dev.cpu.13.cx_lowest: C2
 dev.cpu.13.cx_supported: C1/1/1 C2/2/41
 dev.cpu.13.%parent: acpi0
@@ -349,8 +351,8 @@ dev.cpu.13.%location: handle=\_SB_.SCK0.CP0D
 dev.cpu.13.%driver: cpu
 dev.cpu.13.%desc: ACPI CPU
 dev.cpu.12.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.12.cx_usage_counters: 75 1682
-dev.cpu.12.cx_usage: 4.26% 95.73% last 18454us
+dev.cpu.12.cx_usage_counters: 79 3728
+dev.cpu.12.cx_usage: 2.07% 97.92% last 29303us
 dev.cpu.12.cx_lowest: C2
 dev.cpu.12.cx_supported: C1/1/1 C2/2/41
 dev.cpu.12.%parent: acpi0
@@ -359,8 +361,8 @@ dev.cpu.12.%location: handle=\_SB_.SCK0.CP0C
 dev.cpu.12.%driver: cpu
 dev.cpu.12.%desc: ACPI CPU
 dev.cpu.11.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.11.cx_usage_counters: 75 1560
-dev.cpu.11.cx_usage: 4.58% 95.41% last 42057us
+dev.cpu.11.cx_usage_counters: 78 5014
+dev.cpu.11.cx_usage: 1.53% 98.46% last 1277us
 dev.cpu.11.cx_lowest: C2
 dev.cpu.11.cx_supported: C1/1/1 C2/2/41
 dev.cpu.11.%parent: acpi0
@@ -369,8 +371,8 @@ dev.cpu.11.%location: handle=\_SB_.SCK0.CP0B
 dev.cpu.11.%driver: cpu
 dev.cpu.11.%desc: ACPI CPU
 dev.cpu.10.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.10.cx_usage_counters: 74 1482
-dev.cpu.10.cx_usage: 4.75% 95.24% last 51230us
+dev.cpu.10.cx_usage_counters: 77 4670
+dev.cpu.10.cx_usage: 1.62% 98.37% last 44277us
 dev.cpu.10.cx_lowest: C2
 dev.cpu.10.cx_supported: C1/1/1 C2/2/41
 dev.cpu.10.%parent: acpi0
@@ -379,8 +381,8 @@ dev.cpu.10.%location: handle=\_SB_.SCK0.CP0A
 dev.cpu.10.%driver: cpu
 dev.cpu.10.%desc: ACPI CPU
 dev.cpu.9.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.9.cx_usage_counters: 77 1542
-dev.cpu.9.cx_usage: 4.75% 95.24% last 55217us
+dev.cpu.9.cx_usage_counters: 77 2846
+dev.cpu.9.cx_usage: 2.63% 97.36% last 56811us
 dev.cpu.9.cx_lowest: C2
 dev.cpu.9.cx_supported: C1/1/1 C2/2/41
 dev.cpu.9.%parent: acpi0
@@ -389,8 +391,8 @@ dev.cpu.9.%location: handle=\_SB_.SCK0.CP09
 dev.cpu.9.%driver: cpu
 dev.cpu.9.%desc: ACPI CPU
 dev.cpu.8.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.8.cx_usage_counters: 75 1657
-dev.cpu.8.cx_usage: 4.33% 95.66% last 55972us
+dev.cpu.8.cx_usage_counters: 80 3158
+dev.cpu.8.cx_usage: 2.47% 97.52% last 46072us
 dev.cpu.8.cx_lowest: C2
 dev.cpu.8.cx_supported: C1/1/1 C2/2/41
 dev.cpu.8.%parent: acpi0
@@ -399,8 +401,8 @@ dev.cpu.8.%location: handle=\_SB_.SCK0.CP08
 dev.cpu.8.%driver: cpu
 dev.cpu.8.%desc: ACPI CPU
 dev.cpu.7.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.7.cx_usage_counters: 78 1810
-dev.cpu.7.cx_usage: 4.13% 95.86% last 48809us
+dev.cpu.7.cx_usage_counters: 79 2933
+dev.cpu.7.cx_usage: 2.62% 97.37% last 56920us
 dev.cpu.7.cx_lowest: C2
 dev.cpu.7.cx_supported: C1/1/1 C2/2/41
 dev.cpu.7.%parent: acpi0
@@ -409,8 +411,8 @@ dev.cpu.7.%location: handle=\_SB_.SCK0.CP07
 dev.cpu.7.%driver: cpu
 dev.cpu.7.%desc: ACPI CPU
 dev.cpu.6.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.6.cx_usage_counters: 76 1780
-dev.cpu.6.cx_usage: 4.09% 95.90% last 48784us
+dev.cpu.6.cx_usage_counters: 79 3204
+dev.cpu.6.cx_usage: 2.40% 97.59% last 56887us
 dev.cpu.6.cx_lowest: C2
 dev.cpu.6.cx_supported: C1/1/1 C2/2/41
 dev.cpu.6.%parent: acpi0
@@ -419,8 +421,8 @@ dev.cpu.6.%location: handle=\_SB_.SCK0.CP06
 dev.cpu.6.%driver: cpu
 dev.cpu.6.%desc: ACPI CPU
 dev.cpu.5.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.5.cx_usage_counters: 69 1511
-dev.cpu.5.cx_usage: 4.36% 95.63% last 42044us
+dev.cpu.5.cx_usage_counters: 76 2844
+dev.cpu.5.cx_usage: 2.60% 97.39% last 56896us
 dev.cpu.5.cx_lowest: C2
 dev.cpu.5.cx_supported: C1/1/1 C2/2/41
 dev.cpu.5.%parent: acpi0
@@ -429,8 +431,8 @@ dev.cpu.5.%location: handle=\_SB_.SCK0.CP05
 dev.cpu.5.%driver: cpu
 dev.cpu.5.%desc: ACPI CPU
 dev.cpu.4.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.4.cx_usage_counters: 88 7738
-dev.cpu.4.cx_usage: 1.12% 98.87% last 8704us
+dev.cpu.4.cx_usage_counters: 88 15757
+dev.cpu.4.cx_usage: 0.55% 99.44% last 7835us
 dev.cpu.4.cx_lowest: C2
 dev.cpu.4.cx_supported: C1/1/1 C2/2/41
 dev.cpu.4.%parent: acpi0
@@ -439,8 +441,8 @@ dev.cpu.4.%location: handle=\_SB_.SCK0.CP04
 dev.cpu.4.%driver: cpu
 dev.cpu.4.%desc: ACPI CPU
 dev.cpu.3.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.3.cx_usage_counters: 75 1421
-dev.cpu.3.cx_usage: 5.01% 94.98% last 42686us
+dev.cpu.3.cx_usage_counters: 78 3048
+dev.cpu.3.cx_usage: 2.49% 97.50% last 43740us
 dev.cpu.3.cx_lowest: C2
 dev.cpu.3.cx_supported: C1/1/1 C2/2/41
 dev.cpu.3.%parent: acpi0
@@ -449,8 +451,8 @@ dev.cpu.3.%location: handle=\_SB_.SCK0.CP03
 dev.cpu.3.%driver: cpu
 dev.cpu.3.%desc: ACPI CPU
 dev.cpu.2.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.2.cx_usage_counters: 76 3908
-dev.cpu.2.cx_usage: 1.90% 98.09% last 27175us
+dev.cpu.2.cx_usage_counters: 96 4626
+dev.cpu.2.cx_usage: 2.03% 97.96% last 56929us
 dev.cpu.2.cx_lowest: C2
 dev.cpu.2.cx_supported: C1/1/1 C2/2/41
 dev.cpu.2.%parent: acpi0
@@ -459,8 +461,8 @@ dev.cpu.2.%location: handle=\_SB_.SCK0.CP02
 dev.cpu.2.%driver: cpu
 dev.cpu.2.%desc: ACPI CPU
 dev.cpu.1.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.1.cx_usage_counters: 109 1762
-dev.cpu.1.cx_usage: 5.82% 94.17% last 42136us
+dev.cpu.1.cx_usage_counters: 76 2880
+dev.cpu.1.cx_usage: 2.57% 97.42% last 56828us
 dev.cpu.1.cx_lowest: C2
 dev.cpu.1.cx_supported: C1/1/1 C2/2/41
 dev.cpu.1.%parent: acpi0
@@ -469,8 +471,8 @@ dev.cpu.1.%location: handle=\_SB_.SCK0.CP01
 dev.cpu.1.%driver: cpu
 dev.cpu.1.%desc: ACPI CPU
 dev.cpu.0.cx_method: C1/mwait/hwc C2/mwait/hwc/bma
-dev.cpu.0.cx_usage_counters: 75 5082
-dev.cpu.0.cx_usage: 1.45% 98.54% last 12721us
+dev.cpu.0.cx_usage_counters: 75 10498
+dev.cpu.0.cx_usage: 0.70% 99.29% last 15963us
 dev.cpu.0.cx_lowest: C2
 dev.cpu.0.cx_supported: C1/1/1 C2/2/41
 dev.cpu.0.%parent: acpi0
@@ -479,3 +481,6 @@ dev.cpu.0.%location: handle=\_SB_.SCK0.CP00
 dev.cpu.0.%driver: cpu
 dev.cpu.0.%desc: ACPI CPU
 dev.cpu.%parent: 
+root@test:~/pti-benchmark/ibrs/HEAD/noucode # ^Dexit
+
+Script done on Wed Jan 31 20:26:07 2018
