@@ -11,4 +11,3 @@ getppid 6       1.062569852     1651568 0.000000643
 getppid 7       1.010441247     1568821 0.000000644
 getppid 8       1.000173254     1558233 0.000000641
 getppid 9       1.000189159     1554602 0.000000643
-FreeBSD arshan-desktop 12.0-CURRENT FreeBSD 12.0-CURRENT #0 r327524: Wed Jan  3 19:43:33 UTC 2018     root@releng3.nyi.freebsd.org:/usr/obj/usr/src/amd64.amd64/sys/GENERIC  amd64
