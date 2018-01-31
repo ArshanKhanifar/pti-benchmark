@@ -2,7 +2,7 @@
 
 This repo contains the results of benchmarking multiple tasks on FreeBSD 12 with the PTI mitigation and Spectre mitigation.
 
-## Results of 'buildworld':
+## Results of `buildworld`:
 
 ### PTI=enabled, PCID=enabled
 
@@ -101,4 +101,6 @@ getppid 7       1.062551476     8922805 0.000000119
 getppid 8       1.062600428     8924624 0.000000119
 getppid 9       1.062549309     8922057 0.000000119
 ```
+# IBRS support, AKA Spectre hardware mitigation
+
 

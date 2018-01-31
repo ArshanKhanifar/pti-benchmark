@@ -1,0 +1,14 @@
+# ./syscall_timing getppid
+0.000000001
+test    loop    time    iterations      periteration
+getppid 0       1.056983718     1643954 0.000000642
+getppid 1       1.062569351     1652338 0.000000643
+getppid 2       1.062568489     1651884 0.000000643
+getppid 3       1.012717111     1577739 0.000000641
+getppid 4       1.013082384     1575011 0.000000643
+getppid 5       1.009982565     1573820 0.000000641
+getppid 6       1.062569852     1651568 0.000000643
+getppid 7       1.010441247     1568821 0.000000644
+getppid 8       1.000173254     1558233 0.000000641
+getppid 9       1.000189159     1554602 0.000000643
+FreeBSD arshan-desktop 12.0-CURRENT FreeBSD 12.0-CURRENT #0 r327524: Wed Jan  3 19:43:33 UTC 2018     root@releng3.nyi.freebsd.org:/usr/obj/usr/src/amd64.amd64/sys/GENERIC  amd64
