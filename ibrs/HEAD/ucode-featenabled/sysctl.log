@@ -1,0 +1,8 @@
+Script started on Wed Jan 31 20:05:57 2018
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featenabled #	sysctl hw.ibrs_disable
+hw.ibrs_disable: 0
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featenabled #	sysctl hw.ibrs_active
+hw.ibrs_active: 1
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featenabled #	^Dexit
+
+Script done on Wed Jan 31 20:06:15 2018
