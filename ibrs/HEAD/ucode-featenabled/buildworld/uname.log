@@ -1,0 +1,6 @@
+Script started on Fri Feb  2 01:19:37 2018
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featenabled/buildworld # uname -a 
+FreeBSD test 12.0-CURRENT FreeBSD 12.0-CURRENT #0 6e337889d3e(master): Thu Feb  1 15:17:11 UTC 2018     root@test:/usr/obj/usr/src/amd64.amd64/sys/GENERIC-NODEBUG  amd64
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featenabled/buildworld # ^Dexit
+
+Script done on Fri Feb  2 01:19:41 2018

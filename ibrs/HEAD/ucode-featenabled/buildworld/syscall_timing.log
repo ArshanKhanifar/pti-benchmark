@@ -617,3 +617,125 @@ build.1.log		build.3.log		ipaddress.log		times.log
 build.2.log		dmesg.log		syscall_timing.log	x86info.log
 root@test:~/pti-benchmark/ibrs/HEAD/ucode-featenabled/buildworld # git add * 
 
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featenabled/buildworld # 
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featenabled/buildworld # git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   build.1.log[m
+	[32mnew file:   build.2.log[m
+	[32mnew file:   build.3.log[m
+	[32mnew file:   dmesg.log[m
+	[32mnew file:   ipaddress.log[m
+	[32mnew file:   syscall_timing.log[m
+	[32mmodified:   times.log[m
+	[32mnew file:   x86info.log[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m../../ucode-featdisabled/buildworld/ipaddress.log[m
+
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featenabled/buildworld # cd ..[K[K[K[Kcd ..
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featenabled #	ls
+buildworld		syscall_timing.log	sysctl_dev.cpu.log	x86info.log
+dmesg.log		sysctl.log		uname.log
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featenabled #	cd ..
+root@test:~/pti-benchmark/ibrs/HEAD # ls
+noucode			ucode-featdisabled	ucode-featenabled
+root@test:~/pti-benchmark/ibrs/HEAD # cd ucode-featd[K[K[K[K[K[K[K[K[K[K[K[K[Kadd * .
+add: Command not found.
+root@test:~/pti-benchmark/ibrs/HEAD # git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   ucode-featenabled/buildworld/build.1.log[m
+	[32mnew file:   ucode-featenabled/buildworld/build.2.log[m
+	[32mnew file:   ucode-featenabled/buildworld/build.3.log[m
+	[32mnew file:   ucode-featenabled/buildworld/dmesg.log[m
+	[32mnew file:   ucode-featenabled/buildworld/ipaddress.log[m
+	[32mnew file:   ucode-featenabled/buildworld/syscall_timing.log[m
+	[32mmodified:   ucode-featenabled/buildworld/times.log[m
+	[32mnew file:   ucode-featenabled/buildworld/x86info.log[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mucode-featdisabled/buildworld/ipaddress.log[m
+
+root@test:~/pti-benchmark/ibrs/HEAD # git add .
+root@test:~/pti-benchmark/ibrs/HEAD # ls
+noucode			ucode-featdisabled	ucode-featenabled
+root@test:~/pti-benchmark/ibrs/HEAD # git dsa[K[K[Kstatus
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   ucode-featdisabled/buildworld/ipaddress.log[m
+	[32mnew file:   ucode-featenabled/buildworld/build.1.log[m
+	[32mnew file:   ucode-featenabled/buildworld/build.2.log[m
+	[32mnew file:   ucode-featenabled/buildworld/build.3.log[m
+	[32mnew file:   ucode-featenabled/buildworld/dmesg.log[m
+	[32mnew file:   ucode-featenabled/buildworld/ipaddress.log[m
+	[32mnew file:   ucode-featenabled/buildworld/syscall_timing.log[m
+	[32mmodified:   ucode-featenabled/buildworld/times.log[m
+	[32mnew file:   ucode-featenabled/buildworld/x86info.log[m
+
+root@test:~/pti-benchmark/ibrs/HEAD # git commit -m " thirs[Kd buildworld for [K[K[Kwith ibrs	feature	enabled"
+[master 16450e9] third buildworld with ibrs feature enabled
+git     9 files changed, 1006361 insertions(+)
+ create mode 100644 ibrs/HEAD/ucode-featdisabled/buildworld/ipaddress.log
+ create mode 100644 ibrs/HEAD/ucode-featenabled/buildworld/build.1.log
+ create mode 100644 ibrs/HEAD/ucode-featenabled/buildworld/build.2.log
+ create mode 100644 ibrs/HEAD/ucode-featenabled/buildworld/build.3.log
+ create mode 100644 ibrs/HEAD/ucode-featenabled/buildworld/dmesg.log
+ create mode 100644 ibrs/HEAD/ucode-featenabled/buildworld/ipaddress.log
+ create mode 100644 ibrs/HEAD/ucode-featenabled/buildworld/syscall_timing.log
+ create mode 100644 ibrs/HEAD/ucode-featenabled/buildworld/x86info.log
+root@test:~/pti-benchmark/ibrs/HEAD # ls
+noucode			ucode-featdisabled	ucode-featenabled
+root@test:~/pti-benchmark/ibrs/HEAD # git push
+Username for 'https://github.com': 
+Password for 'https://aa@github.com': 
+
+root@test:~/pti-benchmark/ibrs/HEAD # git push
+Username for 'https://github.com': 
+Password for 'https://arshankhanifar@github.com': 
+warning: redirecting to https://github.com/arshankhanifar/pti-benchmark/
+Counting objects: 16, done.
+Delta compression using up to 48 threads.
+Compressing objects:   6% (1/15)   Compressing objects:  13% (2/15)   Compressing objects:  20% (3/15)   Compressing objects:  26% (4/15)   Compressing objects:  33% (5/15)   Compressing objects:  40% (6/15)   Compressing objects:  46% (7/15)   Compressing objects:  53% (8/15)   Compressing objects:  60% (9/15)   Compressing objects:  66% (10/15)   Compressing objects:  73% (11/15)   Compressing objects:  80% (12/15)   Compressing objects:  86% (13/15)   Compressing objects:  93% (14/15)   Compressing objects: 100% (15/15)   Compressing objects: 100% (15/15), done.
+Writing objects:   6% (1/16)   Writing objects:  12% (2/16)   Writing objects:  18% (3/16)   Writing objects:  25% (4/16)   Writing objects:  31% (5/16)   Writing objects:  37% (6/16)   Writing objects:  43% (7/16)   Writing objects:  50% (8/16)   Writing objects:  56% (9/16)   Writing objects:  56% (9/16), 3.06 MiB | 444.00 KiB/s   Writing objects:  68% (11/16), 3.06 MiB | 444.00 KiB/s   Writing objects:  68% (11/16), 4.39 MiB | 329.00 KiB/s   Writing objects:  75% (12/16), 4.39 MiB | 329.00 KiB/s   Writing objects:  81% (13/16), 4.39 MiB | 329.00 KiB/s   Writing objects:  87% (14/16), 4.39 MiB | 329.00 KiB/s   Writing objects:  93% (15/16), 4.39 MiB | 329.00 KiB/s   Writing objects: 100% (16/16), 4.39 MiB | 329.00 KiB/s   Writing objects: 100% (16/16), 5.73 MiB | 319.00 KiB/s, done.
+Total 16 (delta 7), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/7)   [Kremote: Resolving deltas:  28% (2/7)   [Kremote: Resolving deltas:  42% (3/7)   [Kremote: Resolving deltas:  57% (4/7)   [Kremote: Resolving deltas:  71% (5/7)   [Kremote: Resolving deltas:  85% (6/7)   [Kremote: Resolving deltas: 100% (7/7)   [Kremote: Resolving deltas: 100% (7/7), completed with 4 local objects.[K
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.[K
+remote: warning: See http://git.io/iEPt8g for more information.[K
+remote: warning: File ibrs/HEAD/ucode-featenabled/buildworld/build.3.log is 55.52 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB[K
+remote: warning: File ibrs/HEAD/ucode-featenabled/buildworld/build.1.log is 55.52 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB[K
+remote: warning: File ibrs/HEAD/ucode-featenabled/buildworld/build.2.log is 55.54 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB[K
+To http://github.com/arshankhanifar/pti-benchmark
+   8bcd4eb..16450e9  master -> master
+root@test:~/pti-benchmark/ibrs/HEAD # ls
+noucode			ucode-featdisabled	ucode-featenabled
+root@test:~/pti-benchmark/ibrs/HEAD # cd ucode-feateen[K[Knabled/
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featenabled #	ls
+buildworld		syscall_timing.log	sysctl_dev.cpu.log	x86info.log
+dmesg.log		sysctl.log		uname.log
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featenabled #	cd [K[Kls /[K../ucode-featdisabled/
+buildworld		syscall_timing.log	sysctl_dev.cpu.log	x86info.log
+dmesg.log		sysctl.log		uname.log
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featenabled #	cd ..[K[K[K[Kcd [K[Kcd buildworld/
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featenabled/buildworld # ls
+build.1.log		build.3.log		ipaddress.log		times.log
+build.2.log		dmesg.log		syscall_timing.log	x86info.log
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featenabled/buildworld # script unae[Kme.log
+Script started, output file is uname.log
+root@test:~/pti-benchmark/ibrs/HEAD/ucode-featenabled/buildworld # 
