@@ -1,0 +1,179 @@
+Script started on Thu Feb  1 23:40:30 2018
+root@=I:~/pti-benchmark/ibrs/11.0/pre-ucode # x86info-a[K[K -a 
+x86info v1.31pre
+^C
+root@=I:~/pti-benchmark/ibrs/11.0/pre-ucode # 
+[Kroot@=I:~/pti-benchmark/ibrs/11.0/pre-ucode # x86info -a 
+x86info v1.31pre
+^C
+root@=I:~/pti-benchmark/ibrs/11.0/pre-ucode # ls
+build.1.log	dmesg.log	kldload.log	time.log	uname.log	x86info.log
+root@=I:~/pti-benchmark/ibrs/11.0/pre-ucode # cd ~
+root@=I:~ # sl[K[Kls
+.cshrc			.k5login		.profile		MEF406F1_0B000025.bin	update-ucode.sh
+.history		.login			.ssh			pti-benchmark
+root@=I:~ # cat update-ucode.sh	
+for x in $(jot $(sysctl -n hw.ncpu)); do cpucontrol -u -d . /dev/cpuctl$x; done
+cpucontrol -u -d . /dev/cpuctl0
+root@=I:~ # ./update-ucode.sh 
+./MEF406F1_0B000025.bin: updating cpu /dev/cpuctl1 from rev 0xb00001e to rev 0xb000025... done.
+./MEF406F1_0B000025.bin: updating cpu /dev/cpuctl2 from rev 0xb00001e to rev 0xb000025... done.
+./MEF406F1_0B000025.bin: updating cpu /dev/cpuctl4 from rev 0xb00001e to rev 0xb000025... done.
+./MEF406F1_0B000025.bin: updating cpu /dev/cpuctl6 from rev 0xb00001e to rev 0xb000025... done.
+./MEF406F1_0B000025.bin: updating cpu /dev/cpuctl8 from rev 0xb00001e to rev 0xb000025... done.
+./MEF406F1_0B000025.bin: updating cpu /dev/cpuctl10 from rev 0xb00001e to rev 0xb000025... done.
+./MEF406F1_0B000025.bin: updating cpu /dev/cpuctl12 from rev 0xb00001e to rev 0xb000025... done.
+./MEF406F1_0B000025.bin: updating cpu /dev/cpuctl14 from rev 0xb00001e to rev 0xb000025... done.
+./MEF406F1_0B000025.bin: updating cpu /dev/cpuctl16 from rev 0xb00001e to rev 0xb000025... done.
+./MEF406F1_0B000025.bin: updating cpu /dev/cpuctl18 from rev 0xb00001e to rev 0xb000025... done.
+./MEF406F1_0B000025.bin: updating cpu /dev/cpuctl20 from rev 0xb00001e to rev 0xb000025... done.
+./MEF406F1_0B000025.bin: updating cpu /dev/cpuctl22 from rev 0xb00001e to rev 0xb000025... done.
+./MEF406F1_0B000025.bin: updating cpu /dev/cpuctl24 from rev 0xb00001e to rev 0xb000025... done.
+./MEF406F1_0B000025.bin: updating cpu /dev/cpuctl26 from rev 0xb00001e to rev 0xb000025... done.
+./MEF406F1_0B000025.bin: updating cpu /dev/cpuctl28 from rev 0xb00001e to rev 0xb000025... done.
+./MEF406F1_0B000025.bin: updating cpu /dev/cpuctl30 from rev 0xb00001e to rev 0xb000025... done.
+./MEF406F1_0B000025.bin: updating cpu /dev/cpuctl32 from rev 0xb00001e to rev 0xb000025... done.
+./MEF406F1_0B000025.bin: updating cpu /dev/cpuctl34 from rev 0xb00001e to rev 0xb000025... done.
+./MEF406F1_0B000025.bin: updating cpu /dev/cpuctl36 from rev 0xb00001e to rev 0xb000025... done.
+./MEF406F1_0B000025.bin: updating cpu /dev/cpuctl38 from rev 0xb00001e to rev 0xb000025... done.
+./MEF406F1_0B000025.bin: updating cpu /dev/cpuctl40 from rev 0xb00001e to rev 0xb000025... done.
+./MEF406F1_0B000025.bin: updating cpu /dev/cpuctl42 from rev 0xb00001e to rev 0xb000025... done.
+./MEF406F1_0B000025.bin: updating cpu /dev/cpuctl44 from rev 0xb00001e to rev 0xb000025... done.
+./MEF406F1_0B000025.bin: updating cpu /dev/cpuctl46 from rev 0xb00001e to rev 0xb000025... done.
+cpucontrol: error opening /dev/cpuctl48 for reading: No such file or directory
+root@=I:~ # x8./update-ucode.sh[K
+[Kroot@=I:~ # 
+[Kroot@=I:~ # ls
+.cshrc			.k5login		.profile		MEF406F1_0B000025.bin	update-ucode.sh
+.history		.login			.ssh			pti-benchmark
+root@=I:~ # cd pti-benchmark/
+README.md      README.old.md  ibrs.old/      ibrs/          pti-pcid/      
+root@=I:~ # cd pti-benchmark/ibrs/HEAD/
+noucode/            ucode-featdisabled/ ucode-featenabled/  
+root@=I:~ # cd pti-benchmark/ibrs/HEAD/u[K[K[K[K[K[K11.0/pre-ucode/
+build.1.log  dmesg.log    kldload.log  time.log     uname.log    x86info.log  
+root@=I:~ # cd pti-benchmark/ibrs/11.0/pre-ucode/
+root@=I:~/pti-benchmark/ibrs/11.0/pre-ucode # cd ..
+root@=I:~/pti-benchmark/ibrs/11.0 # ls
+pre-ucode
+root@=I:~/pti-benchmark/ibrs/11.0 # mkdir post-ucode
+root@=I:~/pti-benchmark/ibrs/11.0 # cd post-ucode/
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # ls
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # x86[K[K[Kscript x86info.log
+Script started, output file is x86info.log
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # x86info -a 
+x86info v1.31pre
+^D^C
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # ^Dexit
+
+Script done, output file is x86info.log
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # ls
+x86info.log
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # ls
+x86info.log
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # cpucontrol[K[K[K[K[K[K[K[K[K[Kscript cpucontt[Krol.log
+Script started, output file is cpucontrol.log
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # cpucontrol /u[Kdev/
+acpi%                    cpuctl28%                cuau0.lock%              log@                     ttyu1.init%
+apm%                     cpuctl29%                cuau1%                   mdctl%                   ttyu1.lock%
+apmctl%                  cpuctl3%                 cuau1.init%              megaraid_sas_ioctl_node@ ttyv0%
+audit%                   cpuctl30%                cuau1.lock%              mem%                     ttyv1%
+auditpipe%               cpuctl31%                da0%                     midistat%                ttyv2%
+bpf%                     cpuctl32%                da0p1%                   mrsas0%                  ttyv3%
+bpf0@                    cpuctl33%                da0p2%                   netmap%                  ttyv4%
+console%                 cpuctl34%                da0p3%                   nfslock%                 ttyv5%
+consolectl%              cpuctl35%                da1%                     null%                    ttyv6%
+cpuctl0%                 cpuctl36%                da2%                     pass0%                   ttyv7%
+cpuctl1%                 cpuctl37%                da3%                     pass1%                   ttyv8%
+cpuctl10%                cpuctl38%                da4%                     pass2%                   ttyv9%
+cpuctl11%                cpuctl39%                da5%                     pass3%                   ttyva%
+cpuctl12%                cpuctl4%                 devctl%                  pass4%                   ttyvb%
+cpuctl13%                cpuctl40%                devctl2%                 pass5%                   ufsid/
+cpuctl14%                cpuctl41%                devstat%                 pass6%                   ufssuspend%
+cpuctl15%                cpuctl42%                diskid/                  pci%                     ugen0.1@
+cpuctl16%                cpuctl43%                fd/                      pts/                     ugen0.2@
+cpuctl17%                cpuctl44%                fido%                    random%                  ugen1.1@
+cpuctl18%                cpuctl45%                full%                    reroot/                  ugen1.2@
+cpuctl19%                cpuctl46%                geom.ctl%                ses0%                    ugen2.1@
+cpuctl2%                 cpuctl47%                gptid/                   sndstat%                 ugen2.2@
+cpuctl20%                cpuctl5%                 hpet0%                   stderr@                  urandom@
+cpuctl21%                cpuctl6%                 io%                      stdin@                   usb/
+cpuctl22%                cpuctl7%                 iov/                     stdout@                  usbctl%
+cpuctl23%                cpuctl8%                 kbd1@                    sysmouse%                xpt0%
+cpuctl24%                cpuctl9%                 kbdmux0%                 ttyu0%                   zero%
+cpuctl25%                ctty%                    klog%                    ttyu0.init%              
+cpuctl26%                cuau0%                   kmem%                    ttyu0.lock%              
+cpuctl27%                cuau0.init%              led/                     ttyu1%                   
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # cpucontrol /dev/cpuctl0[7D [1@-[1@e[1@ 
+cpucontrol: illegal option -- e
+Usage: cpucontrol [-vh] [-d datadir] [-m msr[=value] | -i level | -i level,level_type | -u] device
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # ls
+cpucontrol.log	x86info.log
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # p[Kget[K[K[Kls[K[Kls[K[Kls
+cpucontrol.log	x86info.log
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # /
+bin/            etc/            media/          rescue/         sbin/           tmp/            
+boot/           lib/            mnt/            root/           sys@            usr/            
+dev/            libexec/        proc/           run/            syscall_timing* var/            
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # /[K/ys[K[Kusr/obj/usr/src/amd64.amd64/tools/tools/syscall_timing/syscall_timing getppid
+[Kroot@=I:~/pti-benchmark/ibrs/11.0/post-ucode # l
+l: Command not found.
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # ls
+cpucontrol.log	x86info.log
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # script post[K[K[K[Ksyscall_timing.log
+Script started, output file is syscall_timing.log
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # /usr/obj/usr/src/amd64.amd64/tools/tools/syscall_timing/syscall_timing getppid
+/usr/obj/usr/src/amd64.amd64/tools/tools/syscall_timing/syscall_timing: Command not found.
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # ma[K[Kcd 
+cpucontrol.log      syscall_timing.log  x86info.log         
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # cd l[K[K[K^Dexit
+
+Script done, output file is syscall_timing.log
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # ls
+cpucontrol.log		syscall_timing.log	x86info.log
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # cd /usr/src/
+COPYRIGHT           Makefile.libcompat  UPDATING            crypto/             lib/                secure/             tests/
+LOCKS               Makefile.sys.inc    bin/                etc/                libexec/            share/              tools/
+MAINTAINERS         ObsoleteFiles.inc   buildscript.sh*     gnu/                release/            stand/              usr.bin/
+Makefile            README              cddl/               include/            rescue/             sys/                usr.sbin/
+Makefile.inc1       README.md           contrib/            kerberos5/          sbin/               targets/            
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # cd /usr/src/[K[K[K[K[K[K[K[K[K[K[Kfind /usr/src/ | grep 
+cpucontrol.log      syscall_timing.log  x86info.log         
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # find /usr/src/ | grep syscall_timing
+/usr/src/tools/tools/syscall_timing
+/usr/src/tools/tools/syscall_timing/Makefile
+/usr/src/tools/tools/syscall_timing/syscall_timing.c
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # cd /usr/src/tools/tools/syscall_timing && make
+[Creating objdir /usr/obj/usr/src/amd64.amd64/tools/tools/syscall_timing...]
+echo syscall_timing.full: /usr/lib/libc.a  >> .depend
+cc  -O2 -pipe -static -O   -g -MD  -MF.depend.syscall_timing.o -MTsyscall_timing.o -std=gnu99 -fstack-protector-strong    -Qunused-arguments  -c /usr/src/tools/tools/syscall_timing/syscall_timing.c -o syscall_timing.o
+cc -O2 -pipe -static -O -g -std=gnu99 -fstack-protector-strong -Qunused-arguments  -o syscall_timing.full syscall_timing.o  
+objcopy --only-keep-debug syscall_timing.full syscall_timing.debug
+objcopy --strip-debug --add-gnu-debuglink=syscall_timing.debug  syscall_timing.full syscall_timing
+root@=I:/usr/src/tools/tools/syscall_timing # make install
+install  -s -o root -g wheel -m 555   syscall_timing /syscall_timing
+install  -o root -g wheel -m 444  syscall_timing.debug /.debug/syscall_timing.debug
+root@=I:/usr/src/tools/tools/syscall_timing # ls[K[K/[K.[Kls
+Makefile		syscall_timing.c
+root@=I:/usr/src/tools/tools/syscall_timing # cd ~/[K[K[K[Kcd ~/pti-benchmark/ibrs/11.0/post-ucode
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # ls
+cpucontrol.log		syscall_timing.log	x86info.log
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # script s[Kx86info[K[K[K[K[K[K[K[K[Kpt syscall_timing.log 
+Script started, output file is syscall_timing.log
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # /usr/obj/usr/src/amd64.amd64/tools/tools/syscall_timing/syscall_timing getppid
+Clock resolution: 0.000000001
+test	loop	time	iterations	periteration
+getppid	0	1.006806784	5544717	0.000000181
+getppid	1	1.060040925	7005869	0.000000151
+getppid	2	1.048940456	7898791	0.000000132
+getppid	3	1.060055110	8032957	0.000000131
+getppid	4	1.051979664	7970603	0.000000131
+getppid	5	1.006941645	7618677	0.000000132
+getppid	6	1.062550649	8049582	0.000000132
+getppid	7	1.062599580	8051936	0.000000131
+getppid	8	1.062600766	8051088	0.000000131
+getppid	9	1.062551291	8049373	0.000000132
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # ^Dexit
+
+Script done, output file is syscall_timing.log
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # l

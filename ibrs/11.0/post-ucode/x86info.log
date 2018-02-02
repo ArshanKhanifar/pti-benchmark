@@ -1,0 +1,7 @@
+Script started on Thu Feb  1 23:43:36 2018
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # x86info -a 
+x86info v1.31pre
+^D^C
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # ^Dexit
+
+Script done on Thu Feb  1 23:43:49 2018

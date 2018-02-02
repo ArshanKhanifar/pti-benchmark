@@ -1,0 +1,17 @@
+Script started on Thu Feb  1 23:57:02 2018
+root@test2:~/pti-benchmark/ibrs/11.0/pre-ucode # sys[K[K[K/usr/obj/usr/src/amd64.amd64/tools/tools/syscall_timing/syscall_timing getppid
+Clock resolution: 0.000000001
+test	loop	time	iterations	periteration
+getppid	0	1.005863561	5842039	0.000000172
+getppid	1	1.039455704	7275807	0.000000142
+getppid	2	1.060471519	8177111	0.000000129
+getppid	3	1.059989612	8176395	0.000000129
+getppid	4	1.060047615	8177815	0.000000129
+getppid	5	1.059987400	8175025	0.000000129
+getppid	6	1.052991725	8123438	0.000000129
+getppid	7	1.053991125	8131006	0.000000129
+getppid	8	1.059992343	8173637	0.000000129
+getppid	9	1.059941092	8174164	0.000000129
+root@test2:~/pti-benchmark/ibrs/11.0/pre-ucode # ^Dexit
+
+Script done on Thu Feb  1 23:57:20 2018

@@ -1,0 +1,6 @@
+Script started on Thu Feb  1 23:35:34 2018
+root@=I:~/pti-benchmark/ibrs/11.0/pre-ucode # uname -a
+FreeBSD =I 11.0-RELEASE-p9 FreeBSD 11.0-RELEASE-p9 #0: Tue Apr 11 08:48:40 UTC 2017     root@amd64-builder.daemonology.net:/usr/obj/usr/src/sys/GENERIC  amd64
+root@=I:~/pti-benchmark/ibrs/11.0/pre-ucode # ^Dexit
+
+Script done on Thu Feb  1 23:35:37 2018

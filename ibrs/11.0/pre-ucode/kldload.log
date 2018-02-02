@@ -1,0 +1,8 @@
+Script started on Thu Feb  1 23:37:51 2018
+root@=I:~/pti-benchmark/ibrs/11.0/pre-ucode # kldload cpuctl
+kldload: can't load cpuctl: module already loaded or in kernel
+root@=I:~/pti-benchmark/ibrs/11.0/pre-ucode # p[Kklc[Kdload cpufrew[Kq
+kldload: can't load cpufreq: module already loaded or in kernel
+root@=I:~/pti-benchmark/ibrs/11.0/pre-ucode # ^Dexit
+
+Script done on Thu Feb  1 23:38:06 2018

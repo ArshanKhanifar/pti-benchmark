@@ -1,0 +1,17 @@
+Script started on Thu Feb  1 23:47:41 2018
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # /usr/obj/usr/src/amd64.amd64/tools/tools/syscall_timing/syscall_timing getppid
+Clock resolution: 0.000000001
+test	loop	time	iterations	periteration
+getppid	0	1.006806784	5544717	0.000000181
+getppid	1	1.060040925	7005869	0.000000151
+getppid	2	1.048940456	7898791	0.000000132
+getppid	3	1.060055110	8032957	0.000000131
+getppid	4	1.051979664	7970603	0.000000131
+getppid	5	1.006941645	7618677	0.000000132
+getppid	6	1.062550649	8049582	0.000000132
+getppid	7	1.062599580	8051936	0.000000131
+getppid	8	1.062600766	8051088	0.000000131
+getppid	9	1.062551291	8049373	0.000000132
+root@=I:~/pti-benchmark/ibrs/11.0/post-ucode # ^Dexit
+
+Script done on Thu Feb  1 23:47:59 2018
