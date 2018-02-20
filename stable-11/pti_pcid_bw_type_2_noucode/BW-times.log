@@ -1,0 +1,8 @@
+pti 0, pcid 0:
+     1410.78 real     40299.83 user      3484.00 sys
+pti 0, pcid 1:
+     1403.55 real     40269.80 user      3468.74 sys
+pti 1, pcid 0:
+     1425.54 real     41028.80 user      3594.88 sys
+pti 1, pcid 1:
+     1394.20 real     40344.80 user      3539.91 sys
