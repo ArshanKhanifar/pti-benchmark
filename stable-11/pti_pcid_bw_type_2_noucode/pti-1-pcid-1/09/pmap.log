@@ -1,0 +1,11 @@
+vm.pmap.pdpe.demotions: 3
+vm.pmap.pde.promotions: 1117
+vm.pmap.pde.p_failures: 0
+vm.pmap.pde.mappings: 0
+vm.pmap.pde.demotions: 613
+vm.pmap.pcid_save_cnt: 0
+vm.pmap.pti: 1
+vm.pmap.invpcid_works: 1
+vm.pmap.pcid_enabled: 1
+vm.pmap.pg_ps_enabled: 1
+vm.pmap.pat_works: 1
