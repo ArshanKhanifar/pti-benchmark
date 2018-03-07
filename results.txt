@@ -38,8 +38,8 @@ pti | pcid  | avg (ns)
 ********
 results:
 ********
-  200 +/- 0
-  120.482% +/- 0%
+  value increase = 200 +/- 0
+  percentage increase = 120.482% +/- 0%
 
 ****************
 Hardware: Packet's baremetal type 1
@@ -58,8 +58,8 @@ pti | pcid  | avg (ns)
 ********
 results:
 ********
-  136.1 +/- 0.2101
-  127.196% +/- 0.196355%
+  value increase = 136.1 +/- 0.2101
+  percentage increase = 127.196% +/- 0.196355%
 
 
 **************************
@@ -86,11 +86,11 @@ results:
   real:
     No difference at 95.0% confidence
   user:
-    192.927 +/- 129.683
-    0.473237% +/- 0.318613%
+    value increase = 192.927 +/- 129.683
+    percentage increase = 0.473237% +/- 0.318613%
   sys:
-    180.283 +/- 152.738
-    6.00864% +/- 5.20312%
+    value increase = 180.283 +/- 152.738
+    percentage increase = 6.00864% +/- 5.20312%
 
 
 **********************************
@@ -118,8 +118,8 @@ pti | pcid  | avg (ns)
 ********
 results:
 ********
-  190.8 +/- 1.51517
-  117.047% +/- 1.55644%
+  value increase = 190.8 +/- 1.51517
+  percentage increase = 117.047% +/- 1.55644%
 
 
 **************************
@@ -143,8 +143,8 @@ results:
   real:
     No difference at 95.0% confidence
   user:
-    122.695 +/- 36.5582
-    0.30481% +/- 0.0910228%
+  value increase = 122.695 +/- 36.5582
+  percentage increase =  0.30481% +/- 0.0910228%
   sys:
     No difference at 95.0% confidence
 
@@ -171,8 +171,8 @@ pti | pcid  | avg (ns)
 results: 
 ********
 
-  148.3 +/- 19.2744
-  119.693% +/- 21.5323%
+  value increase = 148.3 +/- 19.2744
+  percentage increase = 119.693% +/- 21.5323%
 
 **********************************
 REVISION: HEAD (c9cf79445478)
@@ -199,8 +199,8 @@ results:
   real:
     No difference at 95.0% confidence
   sys:
-    80.03 +/- 36.338
-    3.0259% +/- 1.40248%
+    value increase = 80.03 +/- 36.338
+    percentage increase = 3.0259% +/- 1.40248%
   user:
     No difference at 95.0% confidence
 
