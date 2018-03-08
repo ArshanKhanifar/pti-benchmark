@@ -1,0 +1,145 @@
+This file contains the results for benchmarking the performance of the 
+PTI patch on FreeBSD 12-current. As a microbenchmark, the timming of 
+getppid(2) system call was used, and as a macrobenchmark, a number of 
+buildworld tasks were timed. 
+
+The benchmark cases are as follows: 
+1. pti off, pcid off
+2. pti off, pcid on
+3. pti on , pcid off
+4. pti on , pcid on
+
+Since pcid is an optimization and is usually enabled by default, the 
+two most interesting cases above are the cases (2) and (4). Other cases
+were measured for demonstration of pcid's effect on overall time.
+
+The results section for each test is the output of ministat(1) for all
+the data gathered for that test. Ministat compares the 
+first input file with all the other input files and reports the difference. For 
+more information, check out the man page of ministat(1).
+
+**********************************
+REVISION: HEAD (b21ccf63f28)
+**********************************
+
+**************************
+Benchmark: 
+Syscall microbenchmark from tools/tools/syscall_timing
+./syscall_timing getppid
+**************************
+
+****************
+Hardware: Packet's baremetal type 2
+Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
+256GB DDR4 ECC RAM
+2.8TB SSD
+****************
+
+********
+results:
+********
+x pti-off-pcid-on.log
++ pti-off-pcid-off.log
+* pti-on-pcid-off.log
+% pti-on-pcid-on.log
++------------------------------------------------------------------------+
+|  *                            %               *                        |
+|  *                            %               *                        |
+|  *                            %               *                        |
+|  *                            %               *                        |
+|  *                            %%              **                       |
+|  * +x   + x                   %%   %          *O         *            *|
+||_MA_||                     |__M__A____|   |___M___A_______|            |
++------------------------------------------------------------------------+
+    N           Min           Max        Median           Avg        Stddev
+x  10           118           162           118         123.9     14.192721
++  10           118           154           118         122.5      11.42366
+No difference proven at 95.0% confidence
+*  10           339           454           340         356.4     37.883447
+Difference at 95.0% confidence
+	232.5 +/- 26.8779
+	187.651% +/- 29.8653%
+	(Student's t, pooled s = 28.6058)
+%  10           262           342           262         272.2     25.301735
+Difference at 95.0% confidence
+	148.3 +/- 19.2744
+	119.693% +/- 21.5323%
+	(Student's t, pooled s = 20.5135)
+
+**********************************
+REVISION: HEAD (c9cf79445478)
+**********************************
+
+**************************
+Benchmark: 
+buildworld, invoked with this command:
+make -C /usr/src -j48 buildworld > build.log 2>&1
+packet's type 2 has 24 physical cores
+**************************
+
+****************
+Hardware: Packet's baremetal type 2
+Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
+256GB DDR4 ECC RAM
+2.8TB SSD
+****************
+
+********
+results:
+********
+x real-pti-off-pcid-on.log
++ real-pti-off-pcid-off.log
+* real-pti-on-pcid-off.log
+% real-pti-on-pcid-on.log
++------------------------------------------------------------------------+
+|  x            + %   x     % +    %  * * +      x                      *|
+||______________|_|___M_A__AMAM|___|____M_|_____|_A__________________|   |
++------------------------------------------------------------------------+
+    N           Min           Max        Median           Avg        Stddev
+x   3       1677.08       1712.18        1691.4     1693.5533       17.6488
++   3        1686.9       1706.72       1697.84     1697.1533     9.9278262
+No difference proven at 95.0% confidence
+*   3       1703.57       1729.55        1705.3     1712.8067      14.52593
+No difference proven at 95.0% confidence
+%   3       1688.69       1701.44       1695.96     1695.3633     6.3959075
+No difference proven at 95.0% confidence
+
+x user-pti-off-pcid-on.log
++ user-pti-off-pcid-off.log
+* user-pti-on-pcid-off.log
+% user-pti-off-pcid-off.log
++------------------------------------------------------------------------+
+|    O@   x             @x                                    *  *      *|
+||_|__M___M_A_A________||                                     |__M_A____||
++------------------------------------------------------------------------+
+    N           Min           Max        Median           Avg        Stddev
+x   3      50223.23      50409.49      50273.89     50302.203     96.303845
++   3      50226.37      50401.75      50230.85     50286.323      99.98752
+No difference proven at 95.0% confidence
+*   3      50754.05      50842.26      50781.66     50792.657     45.121459
+Difference at 95.0% confidence
+	490.453 +/- 170.45
+	0.975014% +/- 0.341564%
+	(Student's t, pooled s = 75.201)
+%   3      50226.37      50401.75      50230.85     50286.323      99.98752
+No difference proven at 95.0% confidence
+
+x sys-pti-off-pcid-on.log
++ sys-pti-off-pcid-off.log
+* sys-pti-on-pcid-off.log
+% sys-pti-off-pcid-off.log
++------------------------------------------------------------------------+
+|@x     @     x@ x                                 *            *      * |
+||_|____A__A__M|___|                                |_________A_M_______||
++------------------------------------------------------------------------+
+    N           Min           Max        Median           Avg        Stddev
+x   3        2623.5       2658.68       2652.31       2644.83      18.74489
++   3       2620.79       2654.58       2637.55       2637.64      16.89518
+No difference proven at 95.0% confidence
+*   3       2740.31       2787.22       2772.59     2766.7067     24.002026
+Difference at 95.0% confidence
+	121.877 +/- 48.8099
+	4.60811% +/- 1.87816%
+	(Student's t, pooled s = 21.5345)
+%   3       2620.79       2654.58       2637.55       2637.64      16.89518
+No difference proven at 95.0% confidence
