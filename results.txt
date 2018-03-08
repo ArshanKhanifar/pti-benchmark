@@ -45,7 +45,9 @@ REVISION: 11.1
 **********************************
 
 **************************
-Benchmark: getppid
+Benchmark: 
+Syscall microbenchmark from tools/tools/syscall_timing
+./syscall_timing getppid
 **************************
 
 ****************
@@ -168,7 +170,9 @@ REVISION: Stable/11
 **********************************
 
 **************************
-Benchmark: getppid
+Benchmark: 
+Syscall microbenchmark from tools/tools/syscall_timing
+./syscall_timing getppid
 **************************
 
 ****************
@@ -265,7 +269,9 @@ REVISION: HEAD (b21ccf63f28)
 **********************************
 
 **************************
-Benchmark: getppid
+Benchmark: 
+Syscall microbenchmark from tools/tools/syscall_timing
+./syscall_timing getppid
 **************************
 
 ****************
