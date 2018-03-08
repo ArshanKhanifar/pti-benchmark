@@ -105,7 +105,10 @@ Difference at 95.0% confidence
 	127.196% +/- 0.196355%
 
 **************************
-Benchmark: buildworld
+Benchmark: 
+buildworld, invoked with this command:
+make -C /usr/src -j48 buildworld > build.log 2>&1
+packet's type 2 has 24 physical cores
 **************************
 
 ****************
@@ -205,7 +208,10 @@ Difference at 95.0% confidence
 	117.047% +/- 1.55644%
 
 **************************
-Benchmark: buildworld
+Benchmark: 
+buildworld, invoked with this command:
+make -C /usr/src -j48 buildworld > build.log 2>&1
+packet's type 2 has 24 physical cores
 **************************
 
 ****************
@@ -306,7 +312,10 @@ REVISION: HEAD (c9cf79445478)
 **********************************
 
 **************************
-Benchmark: buildworld
+Benchmark: 
+buildworld, invoked with this command:
+make -C /usr/src -j48 buildworld > build.log 2>&1
+packet's type 2 has 24 physical cores
 **************************
 
 ****************
