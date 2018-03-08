@@ -1,5 +1,5 @@
 This file contains the results for benchmarking the performance of the 
-PTI-PCID patch on FreeBSD 11.1. As a microbenchmark, the timming of 
+PTI patch on FreeBSD 11.1. As a microbenchmark, the timming of 
 getppid(2) system call was used, and as a macrobenchmark, a number of 
 buildworld tasks were timed. 
 
@@ -9,9 +9,36 @@ The benchmark cases are as follows:
 3. pti on , pcid off
 4. pti on , pcid on
 
-The results section for each test compares the cases 2 and 4 above,
-as pcid optimization is always enabled, and the other cases are 
-measured for demonstration purposes.
+Since pcid is an optimization and is usually enabled by default, the 
+two most interesting cases above are the cases (2) and (4). Other cases
+were measured for demonstration of pcid's effect on overall time.
+
+The results section for each test is the output of ministat(1) for all
+the data gathered for that test. An example result would be as follows:
+
+x pti-off-pcid-on.log
++ pti-off-pcid-off.log
+* pti-on-pcid-off.log
+% pti-on-pcid-on.log
+    N          Min          Max       Median          Avg        Stddev
+x  10          107          107          107          107             0
++  10          106          107          107        106.8    0.42163702
+No difference proven at 95.0% confidence
+*  10          308          312          308        308.9       1.66333
+Difference at 95.0% confidence
+	201.9 +/- 1.10511
+	188.692% +/- 1.03281%
+%  10          243          244          243        243.1    0.31622777
+Difference at 95.0% confidence
+	136.1 +/- 0.2101
+	127.196% +/- 0.196355%
+
+Here, four log files were passed to ministat(1). Ministat compares the 
+first file with all the other files and reports the difference. For 
+more information, check out the man page of ministat(1).
+
+The first file and the last file correspond to the most interesting 
+cases (pcid on).
 
 **********************************
 REVISION: 11.1
@@ -28,18 +55,25 @@ Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 2.8TB SSD
 ****************
 
-pti | pcid  | avg (ns)
-------------------
-0   | 0     | 165.9
-0   | 1     | 166
-1   | 0     | 432
-1   | 1     | 366
-
 ********
 results:
 ********
-  value increase = 200 +/- 0
-  percentage increase = 120.482% +/- 0%
+x pti-off-pcid-on.log
++ pti-off-pcid-off.log
+* pti-on-pcid-off.log
+% pti-on-pcid-on.log
+    N          Min          Max       Median          Avg        Stddev
+x  10          166          166          166          166             0
++  10          165          166          166        165.9    0.31622777
+No difference proven at 95.0% confidence
+*  10          432          432          432          432             0
+Difference at 95.0% confidence
+	266 +/- 0
+	160.241% +/- 0%
+%  10          366          366          366          366             0
+Difference at 95.0% confidence
+	200 +/- 0
+	120.482% +/- 0%
 
 ****************
 Hardware: Packet's baremetal type 1
@@ -48,19 +82,25 @@ Intel(R) Xeon(R) CPU E3-1240 v5 @ 3.50GHz
 120GB SSD
 ****************
 
-pti | pcid  | avg (ns)
-------------------
-0   | 0     | 106.8
-0   | 1     | 110
-1   | 0     | 308.9 
-1   | 1     | 243.1
-
 ********
 results:
 ********
-  value increase = 136.1 +/- 0.2101
-  percentage increase = 127.196% +/- 0.196355%
-
+x pti-off-pcid-on.log
++ pti-off-pcid-off.log
+* pti-on-pcid-off.log
+% pti-on-pcid-on.log
+    N          Min          Max       Median          Avg        Stddev
+x  10          107          107          107          107             0
++  10          106          107          107        106.8    0.42163702
+No difference proven at 95.0% confidence
+*  10          308          312          308        308.9       1.66333
+Difference at 95.0% confidence
+	201.9 +/- 1.10511
+	188.692% +/- 1.03281%
+%  10          243          244          243        243.1    0.31622777
+Difference at 95.0% confidence
+	136.1 +/- 0.2101
+	127.196% +/- 0.196355%
 
 **************************
 Benchmark: buildworld
@@ -73,25 +113,55 @@ Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 2.8TB SSD
 ****************
 
-pti | pcid  | real(s)   | user(s)   | sys(s)
------------------------------------------------
-0   | 0     | 1427.4033 | 40795.943 | 3027.4467 
-0   | 1     | 1423.3767 | 40767.437 | 3000.4033
-1   | 0     | 1435.2333 | 41608.6   | 3201.9967
-1   | 1     | 1418.48   | 40960.363 | 3180.6867
-
 ********
 results:
 ********
-  real:
-    No difference at 95.0% confidence
-  user:
-    value increase = 192.927 +/- 129.683
-    percentage increase = 0.473237% +/- 0.318613%
-  sys:
-    value increase = 180.283 +/- 152.738
-    percentage increase = 6.00864% +/- 5.20312%
 
+x real-pti-off-pcid-on.log
++ real-pti-off-pcid-off.log
+* real-pti-on-pcid-off.log
+% real-pti-on-pcid-on.log
+    N          Min          Max       Median          Avg        Stddev
+x   3      1412.66       1432.4      1425.07    1423.3767     9.9783482
++   3      1423.18      1434.26      1424.77    1427.4033     5.9910294
+No difference proven at 95.0% confidence
+*   3      1428.15      1440.86      1436.69    1435.2333     6.4789994
+No difference proven at 95.0% confidence
+%   3      1407.81      1426.11      1421.52      1418.48     9.5212237
+No difference proven at 95.0% confidence
+
+x user-pti-off-pcid-on.log
++ user-pti-off-pcid-off.log
+* user-pti-on-pcid-off.log
+% user-pti-on-pcid-on.log
+x   3     40715.65     40807.42     40779.24    40767.437      47.00981
++   3     40743.07     40827.49     40817.27    40795.943     46.073899
+No difference proven at 95.0% confidence
+*   3     41555.35     41662.88     41607.57      41608.6     53.772399
+Difference at 95.0% confidence
+	841.163 +/- 114.473
+	2.06332% +/- 0.28332%
+%   3     40885.11     41007.47     40988.51    40960.363     65.857183
+Difference at 95.0% confidence
+	192.927 +/- 129.683
+	0.473237% +/- 0.318613%
+
+x sys-pti-off-pcid-on.log
++ sys-pti-off-pcid-off.log
+* sys-pti-on-pcid-off.log
+% sys-pti-on-pcid-on.log
+    N          Min          Max       Median          Avg        Stddev
+x   3      2948.17      3061.64       2991.4    3000.4033     57.268274
++   3      2970.98      3087.42      3023.94    3027.4467      58.29915
+No difference proven at 95.0% confidence
+*   3       3132.6      3257.88      3215.51    3201.9967     63.723836
+Difference at 95.0% confidence
+	201.593 +/- 137.315
+	6.71887% +/- 4.71642%
+%   3      3096.79      3245.51      3199.76    3180.6867     76.172525
+Difference at 95.0% confidence
+	180.283 +/- 152.738
+	6.00864% +/- 5.20312%
 
 **********************************
 REVISION: Stable/11
@@ -108,45 +178,87 @@ Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 2.8TB SSD
 ****************
 
-pti | pcid  | avg (ns)
-------------------
-0   | 0     | 165.6
-0   | 1     | 163.011
-1   | 0     | 412.811
-1   | 1     | 353.811
-
 ********
 results:
 ********
-  value increase = 190.8 +/- 1.51517
-  percentage increase = 117.047% +/- 1.55644%
-
+x pti-off-pcid-on.log
++ pti-off-pcid-off.log
+* pti-on-pcid-off.log
+% pti-on-pcid-on.log
+    N         Min          Max       Median          Avg        Stddev
+x  90     	  156          169       164 	      	 163        5.1
++ 110     	  156          169       168             165        4.7
+Difference at 95.0% confidence
+	2.6 +/- 1.4
+	1.58817% +/- 0.841783%
+*  90         405          420       412 		     413        4.7
+Difference at 95.0% confidence
+	250 +/- 1.4
+	153.241% +/- 1.74778%
+%  90         346          363       356             354 		5.2
+Difference at 95.0% confidence
+	191 +/- 1.5
+	117.047% +/- 1.55644%
 
 **************************
 Benchmark: buildworld
 **************************
 
 ****************
-Hardware: type 2
+Hardware: Packet's baremetal type 2
+Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
+256GB DDR4 ECC RAM
+2.8TB SSD
 ****************
-
-pti | pcid  | real(s)   | user(s)   | sys(s)
------------------------------------------------
-0   | 0     | 1403.9364 | 40265.812 | 3526.6773
-0   | 1     | 1397.9275 | 40252.926 | 3526.2912
-1   | 0     | 1431.9913 | 41039.974 | 3644.6625
-1   | 1     | 1405.0262 | 40375.621 | 3597.9088
 
 ********
 results:
 ********
-  real:
-    No difference at 95.0% confidence
-  user:
-  value increase = 122.695 +/- 36.5582
-  percentage increase =  0.30481% +/- 0.0910228%
-  sys:
-    No difference at 95.0% confidence
+x real-pti-off-pcid-on.log
++ real-pti-off-pcid-off.log
+* real-pti-on-pcid-off.log
+% real-pti-on-pcid-on.log
+    N          Min          Max       Median          Avg        Stddev
+x   8      1393.91      1403.63     1396.375    1397.9275     4.1711689
++  11      1393.13      1414.77      1406.41    1403.9364     7.7639955
+No difference proven at 95.0% confidence
+*   8      1419.18      1453.41      1430.63    1431.9913     10.350563
+Difference at 95.0% confidence
+	34.0638 +/- 8.463
+	2.43673% +/- 0.607479%
+%   8      1390.85      1420.04     1404.555    1405.0262     10.282054
+No difference proven at 95.0% confidence
+
+x user-pti-off-pcid-on.log
++ user-pti-off-pcid-off.log
+* user-pti-on-pcid-off.log
+% user-pti-on-pcid-on.log
+x   8     40162.28     40294.44     40260.33    40252.926     41.129635
++  11     40198.92     40309.19     40267.77    40265.812     35.885894
+No difference proven at 95.0% confidence
+*   8     40979.55     41111.46     41033.715   41039.974     37.818408
+Difference at 95.0% confidence
+	787.048 +/- 42.3731
+	1.95526% +/- 0.106387%
+%   8      40344.8     40423.27     40378.52    40375.621     25.143269
+Difference at 95.0% confidence
+	122.695 +/- 36.5582
+	0.30481% +/- 0.0910228%
+
+x sys-pti-off-pcid-on.log
++ sys-pti-off-pcid-off.log
+* sys-pti-on-pcid-off.log
+% sys-pti-on-pcid-on.log
+    N          Min          Max       Median          Avg        Stddev
+x   8      3465.12      3669.91      3491.24    3526.2912     73.693777
++  11      3460.33      3680.45      3494.61    3526.6773     68.983675
+No difference proven at 95.0% confidence
+*   8      3575.54      3771.82      3626.55    3644.6625     68.576334
+Difference at 95.0% confidence
+	118.371 +/- 76.3417
+	3.35682% +/- 2.20417%
+%   8      3534.88      3703.38     3575.055    3597.9088     63.416542
+No difference proven at 95.0% confidence
 
 **********************************
 REVISION: HEAD (b21ccf63f28)
@@ -157,22 +269,31 @@ Benchmark: getppid
 **************************
 
 ****************
-Hardware: type 2
+Hardware: Packet's baremetal type 2
+Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
+256GB DDR4 ECC RAM
+2.8TB SSD
 ****************
 
-pti | pcid  | avg (ns)
-------------------
-0   | 0     | 122.5
-0   | 1     | 123.9
-1   | 0     | 356.4
-1   | 1     | 272.2
-
 ********
-results: 
+results:
 ********
-
-  value increase = 148.3 +/- 19.2744
-  percentage increase = 119.693% +/- 21.5323%
+x pti-off-pcid-on.log
++ pti-off-pcid-off.log
+* pti-on-pcid-off.log
+% pti-on-pcid-on.log
+    N          Min          Max       Median          Avg        Stddev
+x  10          118          162          118        123.9     14.192721
++  10          118          154          118        122.5      11.42366
+No difference proven at 95.0% confidence
+*  10          339          454          340        356.4     37.883447
+Difference at 95.0% confidence
+	232.5 +/- 26.8779
+	187.651% +/- 29.8653%
+%  10          262          342          262        272.2     25.301735
+Difference at 95.0% confidence
+	148.3 +/- 19.2744
+	119.693% +/- 21.5323%
 
 **********************************
 REVISION: HEAD (c9cf79445478)
@@ -183,24 +304,56 @@ Benchmark: buildworld
 **************************
 
 ****************
-Hardware: type 2
+Hardware: Packet's baremetal type 2
+Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
+256GB DDR4 ECC RAM
+2.8TB SSD
 ****************
 
-pti | pcid  | real(s)   | user(s)   | sys(s)
------------------------------------------------
-0   | 0     | 1693.5533 | 50302.203 | 2644.83
-0   | 1     | 1697.1533 | 50286.323 | 2637.64
-1   | 0     | 1712.8067 | 50792.657 | 2766.7067
-1   | 1     | 1695.3633 | 50419.487 | 2724.86
-
 ********
-results: 
+results:
 ********
-  real:
-    No difference at 95.0% confidence
-  sys:
-    value increase = 80.03 +/- 36.338
-    percentage increase = 3.0259% +/- 1.40248%
-  user:
-    No difference at 95.0% confidence
+x real-pti-off-pcid-on.log
++ real-pti-off-pcid-off.log
+* real-pti-on-pcid-off.log
+% real-pti-on-pcid-on.log
+    N          Min          Max      Median           Avg        Stddev
+x   3      1677.08      1712.18       1691.4    1693.5533       17.6488
++   3       1686.9      1706.72      1697.84    1697.1533     9.9278262
+No difference proven at 95.0% confidence
+*   3      1703.57      1729.55       1705.3    1712.8067      14.52593
+No difference proven at 95.0% confidence
+%   3      1688.69      1701.44      1695.96    1695.3633     6.3959075
+No difference proven at 95.0% confidence
 
+x user-pti-off-pcid-on.log
++ user-pti-off-pcid-off.log
+* user-pti-on-pcid-off.log
+% user-pti-on-pcid-on.log
+    N          Min          Max       Median          Avg        Stddev
+x   3     50223.23     50409.49     50273.89    50302.203     96.303845
++   3     50226.37     50401.75     50230.85    50286.323      99.98752
+No difference proven at 95.0% confidence
+*   3     50754.05     50842.26     50781.66    50792.657     45.121459
+Difference at 95.0% confidence
+	490.453 +/- 170.45
+	0.975014% +/- 0.341564%
+%   3      50342.4     50535.65     50380.41    50419.487     102.37983
+No difference proven at 95.0% confidence
+
+x sys-pti-off-pcid-on.log
++ sys-pti-off-pcid-off.log
+* sys-pti-on-pcid-off.log
+% sys-pti-on-pcid-on.log
+    N          Min          Max       Median          Avg        Stddev
+x   3       2623.5      2658.68      2652.31      2644.83      18.74489
++   3      2620.79      2654.58      2637.55      2637.64      16.89518
+No difference proven at 95.0% confidence
+*   3      2740.31      2787.22      2772.59    2766.7067     24.002026
+Difference at 95.0% confidence
+	121.877 +/- 48.8099
+	4.60811% +/- 1.87816%
+%   3      2710.22      2733.57      2730.79      2724.86      12.75458
+Difference at 95.0% confidence
+	80.03 +/- 36.338
+	3.0259% +/- 1.40248%
