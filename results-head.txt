@@ -1,6 +1,6 @@
 Executive Summary:
 - The PTI feature increases the system call times by more than 100%.
-- For a typical task such as buildworld, wall clock and user time 
+- As a macrobenchmark, buildworld was used. Wall clock and user time 
 showed no statistically-significant changes, while system time 
 increased by less than 5%.
 
