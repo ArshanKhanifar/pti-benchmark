@@ -1,8 +1,9 @@
 Executive Summary:
 - The PTI feature increases the system call times by more than 100%.
-- For a typical task such as buildworld, wall clock time remains 
-largely unchanged, while there is a slight increase of less than 5% in 
-the system calls and user calls.
+- For a typical task such as buildworld, wall clock and user time 
+showed no statistically-significant changes, while system time 
+increased by less than 5%.
+
 
 This file contains the results for benchmarking the performance of the 
 PTI patch on FreeBSD 12-current. As a microbenchmark, the timming of 
@@ -21,8 +22,9 @@ were measured for demonstration of PCID's effect on overall time.
 
 The results section for each test is the output of ministat(1) for all
 the data gathered for that test. Ministat compares the 
-first input file with all the other input files and reports the difference. For 
-more information, check out the man page of ministat(1).
+first input file with all the other input files and reports the 
+difference. For more information, check out the man page of 
+ministat(1).
 
 **********************************
 REVISION: HEAD (b21ccf63f28)
