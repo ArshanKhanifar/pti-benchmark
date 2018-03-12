@@ -1,0 +1,7 @@
+x results/clock_gettime.2
++ results/clock_gettime.4
+[no plot, span is zero width]
+    N           Min           Max        Median           Avg        Stddev
+x  10            34            34            34            34             0
++  10            34            34            34            34             0
+No difference proven at 95.0% confidence
