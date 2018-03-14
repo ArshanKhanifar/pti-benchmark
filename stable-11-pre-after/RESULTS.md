@@ -5,23 +5,23 @@ Namely, `sysctl vm.pmap.pti=0`.
 SUMMARY: Merging the Meltdown patch didn't have significant changes in 
 any of the microbenchmarks.
 
-access:
-	-17.7 +/- 0.564627
-	-0.865356% +/- 0.0274432%
+#access:
+difference(ns): -17.7 +/- 0.564627
+-0.865356% +/- 0.0274432%
 bad_open
-	3.5 +/- 0.350167
-	0.856793% +/- 0.0864546%
+3.5 +/- 0.350167
+0.856793% +/- 0.0864546%
 chroot
-	12.7 +/- 0.350167
-	2.2041% +/- 0.0616323%
+12.7 +/- 0.350167
+2.2041% +/- 0.0616323%
 clock_gettime
-	No difference at 95.0% confidence
+No difference at 95.0% confidence
 create_unlink
-	-280.3 +/- 29.4027
-	-2.04842% +/- 0.211002%
+-280.3 +/- 29.4027
+-2.04842% +/- 0.211002%
 dup
-	3 +/- 0
-	0.583658% +/- 0%
+3 +/- 0
+0.583658% +/- 0%
 fork
 	-1958.9 +/- 507.974
 	-1.81164% +/- 0.46416%
